@@ -65,6 +65,8 @@
     <Folder Include="tSQLt\User Defined Types" />
     <Folder Include="tSQLt\Views" />
     <Folder Include="Security" />
+    <Folder Include="UnitTests\" />
+    <Folder Include="UnitTests\Stored Procedures\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WideWorldImporters.Database\WideWorldImporters.Database.sqlproj">
@@ -226,6 +228,8 @@
     <Build Include="tSQLt\Stored Procedures\Uninstall.sql" />
     <Build Include="tSQLt\Stored Procedures\XmlResultFormatter.sql" />
     <Build Include="Security\tSQLt.sql" />
+    <Build Include="UnitTests\Stored Procedures\test AssertPass.sql" />
+    <Build Include="Security\UnitTests.sql" />
   </ItemGroup>
   <ItemGroup>
     <PreDeploy Include="Script.PreDeployment.Setup_tSQLt.sql" />
