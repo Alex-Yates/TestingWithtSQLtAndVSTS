@@ -227,4 +227,10 @@
     <Build Include="tSQLt\Stored Procedures\XmlResultFormatter.sql" />
     <Build Include="Security\tSQLt.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <PreDeploy Include="Script.PreDeployment.Setup_tSQLt.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Script.PostDeployment.Exec_tSQLt_RunAll.sql" />
+  </ItemGroup>
 </Project>
