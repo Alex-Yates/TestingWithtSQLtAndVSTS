@@ -69,22 +69,8 @@
     <Folder Include="UnitTests\Stored Procedures\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WideWorldImporters.Database\WideWorldImporters.Database.sqlproj">
-      <Name>WideWorldImporters.Database</Name>
-      <Project>{47b5a2dc-d8c2-4d0a-8e17-59ef065b27f0}</Project>
-      <Private>True</Private>
-      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ArtifactReference Include="C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac">
-      <HintPath>$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac</HintPath>
-      <SuppressMissingDependenciesErrors>True</SuppressMissingDependenciesErrors>
-      <DatabaseVariableLiteralValue>sys</DatabaseVariableLiteralValue>
-    </ArtifactReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Assemblies\tSQLtCLR.dll" />
+    <None Include="WideWorldImporters.Tests.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="tSQLtCLR">
@@ -236,5 +222,20 @@
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment.Exec_tSQLt_RunAll.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WideWorldImporters.Database\WideWorldImporters.Database.sqlproj">
+      <Name>WideWorldImporters.Database</Name>
+      <Project>{47b5a2dc-d8c2-4d0a-8e17-59ef065b27f0}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ArtifactReference Include="C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac">
+      <HintPath>$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac</HintPath>
+      <SuppressMissingDependenciesErrors>True</SuppressMissingDependenciesErrors>
+      <DatabaseVariableLiteralValue>sys</DatabaseVariableLiteralValue>
+    </ArtifactReference>
   </ItemGroup>
 </Project>
